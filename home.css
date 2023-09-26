@@ -49,6 +49,7 @@ button{
     padding: 4%;
     width: 31%;
     background-color: rgb(28 229 28);
+    animation: blink 1s infinite;
 }
 .q{
     width: 60%;
@@ -59,5 +60,22 @@ button{
     }
     100%{
         transform: rotate(560deg);
+    }
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.7;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
     }
 }
